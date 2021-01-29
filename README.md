@@ -2,11 +2,6 @@
 Create initial video from corrupted video sequence 
 by Chahrazade Bahbah (https://github.com/cbahbah/)
 
-
-## Build
-
-To start the program: `./build/VideoEditorCB`
-
 ## External Libraries
  - OpenCV : https://en.wikipedia.org/wiki/OpenCV
 
