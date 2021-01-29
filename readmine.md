@@ -17,7 +17,7 @@ To start the program: `./VideoCB`
  - To reoder the selected frames, we recompute the SSIM index (SSIMfiltered.txt, meanSSIMfiltered.txt). This time, instead of compare the values frame by frame. For now, the algorithm consider that the fist frame of the video is the correct first one. So we start from the first, and move forward. We compare the selected frame with rest to find the closest one. The process is reiterated till all frames are processed. We create a final video from the ordered frames (**finalVideo.mp4**).
 
 
-## Possible Improvements 
+## Future Improvements 
  - The algorithm SURF should be used for the reoder step. It consists in detecting interesting points in each frame and compute the correspondances with the remaining frames. Unlike the SSIM method that compares the luminance and the contrast between the images and output a metric, the SURF method is a local descriptor that give us a number of points corrspondances between the frames. This could correct the video sequence if unwanted frames are still remaining. The method was implemented but not tested yet (no time :( ).
  - Also, a method that compute the first or last frame of the video sequence should be implemented. A possible algorithm could be to select the first frame as the one who has the least point correspondances with others. In fact, if a frame is located in the middle of the video sequence, the higher the correspondance is...
 
